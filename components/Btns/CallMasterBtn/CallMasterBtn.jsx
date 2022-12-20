@@ -10,15 +10,16 @@ export default function CallMasterBtn(props) {
 
     useEffect(() => {
         console.log('CMB, f-useEffect, modalContext, openModal:', { modalContext, openModal });
-        debugger;
+        // debugger;
     }, [modalContext, openModal])
 
     return (
-        <div
-            className={"callmaster btn " + props.className}
-            onClick={openModal}
-        >
-            Заказать мастера на замер
-        </div>
+        <div></div>
+        // <div
+        //     className={"callmaster btn " + props.className}
+        //     onClick={openModal}
+        // >
+        //     Заказать мастера на замер
+        // </div>
     );
 }

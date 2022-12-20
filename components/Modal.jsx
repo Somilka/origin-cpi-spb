@@ -7,12 +7,12 @@ export default function Modal() {
 
     const openModal = useCallback(() => {
         console.log("lololo");
-        debugger;
+        // debugger;
     }, []);
 
     useEffect(() => {
         modalContext.openModal = openModal;
-        debugger;
+        // debugger;
     }, [modalContext, openModal]);
 
     return <div className="modal">Hello</div>;
