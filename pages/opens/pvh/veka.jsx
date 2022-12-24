@@ -9,7 +9,7 @@ export default function Veka() {
             </div>
             <div className="content">
                 <Link href="/opens/pvh/veka/euroline">
-                    <div className="f3 card h100 jcsb">
+                    <div className="f3 mob-left card h100 jcsb">
                         <h3 className="tac">
                             Окна из профиля<br/>Veka Euroline 58
                         </h3>
@@ -17,7 +17,7 @@ export default function Veka() {
                     </div>
                 </Link>
                 <Link href="/opens/pvh/veka/softline70">
-                    <div className="s3 card h100 jcsb">
+                    <div className="s3 mob-right card h100 jcsb">
                         <h3 className="tac">
                             Окна из профиля<br/>Veka Softline 70
                         </h3>
@@ -25,7 +25,7 @@ export default function Veka() {
                     </div>
                 </Link>
                 <Link href="/opens/pvh/veka/whs">
-                    <div className="t3 card h100 jcsb">
+                    <div className="t3 mob-left card h100 jcsb">
                         <h3 className="tac">
                             Окна из профиля<br/>Veka Whs 60
                         </h3>
@@ -33,7 +33,7 @@ export default function Veka() {
                     </div>
                 </Link>
                 <Link href="/opens/pvh/veka/softline82">
-                    <div className="s3 card h100 jcsb">
+                    <div className="s3 mob-right card h100 jcsb">
                         <h3 className="tac">
                             Окна из профиля<br/>Veka Softline 82
                         </h3>

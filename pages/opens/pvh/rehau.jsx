@@ -9,7 +9,7 @@ export default function Rehau() {
             </div>
             <div className="content">
                 <Link href="/opens/pvh/rehau/grazio">
-                    <div className="f3 card h100 jcsb">
+                    <div className="f3 mob-left card h100 jcsb">
                         <h3 className="tac">
                             GRAZIO
                         </h3>
@@ -17,7 +17,7 @@ export default function Rehau() {
                     </div>
                 </Link>
                 <Link href="/opens/pvh/rehau/blitz">
-                    <div className="s3 card h100 jcsb">
+                    <div className="s3 mob-right card h100 jcsb">
                         <h3 className="tac">
                             BLITZ
                         </h3>
@@ -25,7 +25,7 @@ export default function Rehau() {
                     </div>
                 </Link>
                 <Link href="/opens/pvh/rehau/geneo">
-                    <div className="t3 card h100 jcsb">
+                    <div className="t3 mob-left card h100 jcsb">
                         <h3 className="tac">
                             Geneo
                         </h3>
@@ -33,7 +33,7 @@ export default function Rehau() {
                     </div>
                 </Link>
                 <Link href="/opens/pvh/rehau/delight">
-                    <div className="f3 card h100 jcsb">
+                    <div className="f3 mob-right card h100 jcsb">
                         <h3 className="tac">
                             Delight-Design
                         </h3>
@@ -41,7 +41,7 @@ export default function Rehau() {
                     </div>
                 </Link>
                 <Link href="/opens/pvh/rehau/euro-basic">
-                    <div className="s3 card h100 jcsb">
+                    <div className="s3 mob-left card h100 jcsb">
                         <h3 className="tac">
                             Euro-Basic
                         </h3>
@@ -49,7 +49,7 @@ export default function Rehau() {
                     </div>
                 </Link>
                 <Link href="/opens/pvh/rehau/intelio">
-                    <div className="t3 card h100 jcsb">
+                    <div className="t3 mob-right card h100 jcsb">
                         <h3 className="tac">
                             Intelio
                         </h3>
