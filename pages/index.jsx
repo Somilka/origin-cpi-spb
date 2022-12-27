@@ -18,25 +18,25 @@ export default function Index() {
 					<div className={styles.welcomeWin}>
 						<Link href='/opens/pvh'>
 							<div className={styles.welcomeWinCard}>
-								<img className={styles.welcomeWinCardImg} src='/static/dev_logo.png' alt='dev logo' />
+								<img className={styles.welcomeWinCardImg} src='/static/mainWindow/pvh.png' alt='dev logo' />
 								<div className={styles.welcomeWinCardText}>Пластиковые окна</div>
 							</div>
 						</Link>
 						<Link href='/opens/alum'>
 							<div className={styles.welcomeWinCard}>
-								<img className={styles.welcomeWinCardImg} src='/static/dev_logo.png' alt='dev logo' />
+								<img className={styles.welcomeWinCardImg} src='/static/mainWindow/alum.png' alt='dev logo' />
 								<div className={styles.welcomeWinCardText}>Алюминиевые окна</div>
 							</div>
 						</Link>
-						<Link href='/'>
+						<Link href='/opens/wooden'>
 							<div className={styles.welcomeWinCard}>
-								<img className={styles.welcomeWinCardImg} src='/static/dev_logo.png' alt='dev logo' />
+								<img className={styles.welcomeWinCardImg} src='/static//mainWindow/wooden.png' alt='dev logo' />
 								<div className={styles.welcomeWinCardText}>Деревянные окна</div>
 							</div>
 						</Link>
 						<Link href='/opens/fire-fighting'>
 							<div className={styles.welcomeWinCard}>
-								<img className={styles.welcomeWinCardImg} src='/static/dev_logo.png' alt='dev logo' />
+								<img className={styles.welcomeWinCardImg} src='/static/opens/FF/FF1.jpg' alt='dev logo' />
 								<div className={styles.welcomeWinCardText}>Противопожарные окна и двери</div>
 							</div>
 						</Link>
@@ -55,7 +55,7 @@ export default function Index() {
 				</Link>
 				<Link href='/windows'>
 					<div className='category big'>
-						<img src='/static/dev_logo.png' alt='Стеклопакеты' className='category-img' />
+						<img src='/static/wooden-pvh.png' alt='Стеклопакеты' className='category-img' />
 						<div className='category-name'>Стеклопакеты</div>
 					</div>
 				</Link>
