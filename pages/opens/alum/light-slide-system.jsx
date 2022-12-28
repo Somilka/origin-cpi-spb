@@ -7,8 +7,8 @@ export default function LightSlideSystem() {
                 <div className="title">Лёгкая раздвижная система</div>
             </div>
             <div className="content">
-                <img src="/static/opens/LSS/LSS1.jpg" alt="" className="f3" />
-                <div className="flex column st3">
+                <img src="/static/opens/LSS/LSS1.jpg" alt="" className="f3 mobile-full" />
+                <div className="flex column st3 mobile-full">
                     <p>
                         Наша система остекления балконов и лоджий позволяет
                         создавать конструкции с раздвижными, распашными и

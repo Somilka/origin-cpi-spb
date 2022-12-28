@@ -10,8 +10,8 @@ export default function AlumFacades() {
                 <div className="full">
                     <h2>Фасад Reynaers CW 50</h2>
                 </div>
-                <img src="/static/opens/AF/AF1.jpg" alt="" className="f3" />
-                <div className="flex column st3">
+                <img src="/static/opens/AF/AF1.jpg" alt="" className="f3 mobile-full" />
+                <div className="flex column st3 mobile-full">
                     <p>
                         Продукция представлена 10 в вариантах исполнения,
                         которые отличаются между собой внешним видом. Элементы
@@ -61,8 +61,8 @@ export default function AlumFacades() {
                 <div className="full">
                     <h2>Фасад Reynaers CW 60</h2>
                 </div>
-                <img src="/static/opens/AF/AF2.jpg" alt="" className="f3" />
-                <div className="flex column st3">
+                <img src="/static/opens/AF/AF2.jpg" alt="" className="f3 mobile-full" />
+                <div className="flex column st3 mobile-full">
                     <p>
                         Термоизолированная улучшенная модель для остекления
                         больших по площади поверхностей. Система выдерживает
@@ -102,8 +102,8 @@ export default function AlumFacades() {
                 <div className="full">
                     <h2>Фасад Reynaers CW 65-EF</h2>
                 </div>
-                <img src="/static/opens/AF/AF3.jpg" alt="" className="f3" />
-                <div className="flex column st3">
+                <img src="/static/opens/AF/AF3.jpg" alt="" className="f3 mobile-full" />
+                <div className="flex column st3 mobile-full">
                     <p>
                         Позволяет полностью собирать систему на производстве,
                         что ускоряет рабочий процесс на объекте. Фасадное

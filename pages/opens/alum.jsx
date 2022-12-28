@@ -1,43 +1,45 @@
 import MainLayout from "../../layouts/MainLayout";
 import Link from "next/dist/client/link";
 import { useState } from "react";
+import OpensCategories from "../../components/OpensCategories";
 
 export default function Alum() {
     const [winNav, setWinNav] = useState(2);
 
-    const OpensCategories = [
-        {
-            id: 0,
-            title: "Общее",
-            link: "/opens",
-        },
-        {
-            id: 1,
-            title: "Окна ПВХ",
-            link: "/opens/pvh",
-        },
-        {
-            id: 2,
-            title: "Алюминиевые окна",
-            link: "/opens/alum",
-        },
-        {
-            id: 3,
-            title: "Деревянные окна",
-            link: "/opens/wooden",
-        },
-        {
-            id: 4,
-            title: "Противопожарные двери и окна",
-            link: "/opens/fire-fighting",
-        },
-    ];
+    // const OpensCategories = [
+    //     {
+    //         id: 0,
+    //         title: "Общее",
+    //         link: "/opens",
+    //     },
+    //     {
+    //         id: 1,
+    //         title: "Окна ПВХ",
+    //         link: "/opens/pvh",
+    //     },
+    //     {
+    //         id: 2,
+    //         title: "Алюминиевые окна",
+    //         link: "/opens/alum",
+    //     },
+    //     // {
+    //     //     id: 3,
+    //     //     title: "Деревянные окна",
+    //     //     link: "/opens/wooden",
+    //     // },
+    //     {
+    //         id: 4,
+    //         title: "Противопожарные двери и окна",
+    //         link: "/opens/fire-fighting",
+    //     },
+    // ];
 
     return (
         <MainLayout>
             <div className="content">
                 <div className="win-nav">
-                    {OpensCategories.map(({ id, title, link }, i) => (
+                    <OpensCategories winNav={winNav} />
+                    {/* {OpensCategories.map(({ id, title, link }, i) => (
                         <Link key={id} href={link}>
                             <div
                                 className={
@@ -52,7 +54,7 @@ export default function Alum() {
                                 {title}
                             </div>
                         </Link>
-                    ))}
+                    ))} */}
                 </div>
             </div>
             <div className="content">

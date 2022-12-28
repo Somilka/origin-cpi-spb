@@ -1,43 +1,45 @@
 import MainLayout from "../../layouts/MainLayout";
 import { useState } from "react";
 import Link from "next/dist/client/link";
+import OpensCategories from "../../components/OpensCategories";
 
 export default function FireFighting() {
     const [winNav, setWinNav] = useState(4);
 
-    const OpensCategories = [
-        {
-            id: 0,
-            title: "Общее",
-            link: "/opens",
-        },
-        {
-            id: 1,
-            title: "Окна ПВХ",
-            link: "/opens/pvh",
-        },
-        {
-            id: 2,
-            title: "Алюминиевые окна",
-            link: "/opens/alum",
-        },
-        {
-            id: 3,
-            title: "Деревянные окна",
-            link: "/opens/wooden",
-        },
-        {
-            id: 4,
-            title: "Противопожарные двери и окна",
-            link: "/opens/fire-fighting",
-        },
-    ];
+    // const OpensCategories = [
+    //     {
+    //         id: 0,
+    //         title: "Общее",
+    //         link: "/opens",
+    //     },
+    //     {
+    //         id: 1,
+    //         title: "Окна ПВХ",
+    //         link: "/opens/pvh",
+    //     },
+    //     {
+    //         id: 2,
+    //         title: "Алюминиевые окна",
+    //         link: "/opens/alum",
+    //     },
+    //     // {
+    //     //     id: 3,
+    //     //     title: "Деревянные окна",
+    //     //     link: "/opens/wooden",
+    //     // },
+    //     {
+    //         id: 4,
+    //         title: "Противопожарные двери и окна",
+    //         link: "/opens/fire-fighting",
+    //     },
+    // ];
 
     return (
         <MainLayout>
             <div className="content">
                 <div className="win-nav">
-                    {OpensCategories.map(({ id, title, link }, i) => (
+                    <OpensCategories winNav={winNav} />
+                    {/* {OpensCategories.map(({ id, title, link }, i) => (
                         <Link key={id} href={link}>
                             <div
                                 className={
@@ -52,7 +54,7 @@ export default function FireFighting() {
                                 {title}
                             </div>
                         </Link>
-                    ))}
+                    ))} */}
                 </div>
             </div>
             <div className="content">

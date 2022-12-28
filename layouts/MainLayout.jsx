@@ -75,8 +75,10 @@ export default function MainLayout({children, title, page}) {
 						))}
 					</nav>
 					<div className='contacts'>
+						<div className="contact phone">+7 911 950 24 11</div>
 						<div className='contact phone'>+7 921 090 42 50</div>
-						<a href='mailto:info.cpi-spb@yandex.ru' className='contact mail'>
+						<a className='contact mail'> 
+						{/* href='mailto:info.cpi-spb@yandex.ru'  */}
 							info.cpi-spb@yandex.ru
 						</a>
 					</div>

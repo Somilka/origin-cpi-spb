@@ -7,15 +7,15 @@ export default function AlumSlideDoors() {
                 <div className="title">Алюминиевые раздвижные двери</div>
             </div>
             <div className="content">
-                <div className="full flex column bigger-gap">
-                    <h2>Складные раздвижные двери Schüco ASS 80 FD.HI</h2>
-                    <div className="flex ais">
+                {/* <div className="full flex column bigger-gap"> */}
+                    <h2 className="full">Складные раздвижные двери Schüco ASS 80 FD.HI</h2>
+                    {/* <div className="flex ais"> */}
                         <img
                             src="/static/opens/ASD/ASD1.jpg"
-                            className="w50"
+                            className="f3 mobile-full"
                             alt=""
                         />
-                        <div className="flex column">
+                        <div className="flex column st3 mobile-full">
                             <p>
                                 Складная раздвижная система с повышенной
                                 теплоизоляцией, малой шириной видимой части и
@@ -85,23 +85,23 @@ export default function AlumSlideDoors() {
                                     или наружу.
                                 </li>
                             </ul>
-                        </div>
-                    </div>
+                        {/* </div> */}
+                    {/* </div> */}
                 </div>
             </div>
             <div className="content">
-                <div className="full flex column bigger-gap">
-                    <h2>
+                {/* <div className="full flex column bigger-gap"> */}
+                    <h2 className="full">
                         Раздвижная система с повышенной теплоизоляцией Schüco
                         ASS 77 PD.HI
                     </h2>
-                    <div className="flex ais">
+                    {/* <div className="flex ais"> */}
                         <img
                             src="/static/opens/ASD/ASD2.jpg"
-                            className="w50"
+                            className="f3 mobile-full"
                             alt=""
                         />
-                        <div className="flex column">
+                        <div className="flex column st3 mobile-full">
                             <p>
                                 Максимальная универсальность: угол 90°, ручная
                                 фурнитура и рама с 2 или 3 направляющими
@@ -141,22 +141,22 @@ export default function AlumSlideDoors() {
                                 <li>Для замены ходовых роликов не требуется демонтаж рабочей створки</li>
                                 <li>Простое техобслуживание и уход за приводами и блокираторами</li>
                             </ul>
-                        </div>
+                        {/* </div> */}
                     </div>
                 </div>
-            </div>
+            {/* </div> */}
             <div className="content">
-                <div className="full flex column bigger-gap">
-                    <h2>
+                {/* <div className="full flex column bigger-gap"> */}
+                    <h2 className="full">
                     Раздвижная система Schüco ASS 77 PD.SI
                     </h2>
-                    <div className="flex ais">
+                    {/* <div className="flex ais"> */}
                         <img
                             src="/static/opens/ASD/ASD3.jpg"
-                            className="w50"
+                            className="f3 mobile-full"
                             alt=""
                         />
-                        <div className="flex column">
+                        <div className="flex column st3 mobile-full">
                             <p>
                             Современные материалы и технологии покрытий позволяют создавать раздвижные системы с высокой теплоизоляцией и максимальной прозрачностью
                             </p>
@@ -183,22 +183,22 @@ export default function AlumSlideDoors() {
                                 <li>Для замены ходовых роликов не требуется демонтаж рабочей створки: экономия расходов на обслуживание в течение всего срока службы</li>
                                 <li>Привод встроен таким образом, что возможно беспрепятственное техобслуживание и уход за двигателями в раме</li>
                             </ul>
-                        </div>
-                    </div>
+                        {/* </div> */}
+                    {/* </div> */}
                 </div>
             </div>
             <div className="content">
-                <div className="full flex column bigger-gap">
-                    <h2>
+                {/* <div className="full flex column bigger-gap"> */}
+                    <h2 className="full">
                     Раздвижная система Schüco ASS 77 PD.NI
                     </h2>
-                    <div className="flex ais">
+                    {/* <div className="flex ais"> */}
                         <img
                             src="/static/opens/ASD/ASD4.jpeg"
-                            className="w50"
+                            className="f3 mobile-full"
                             alt=""
                         />
-                        <div className="flex column">
+                        <div className="flex column st3 mobile-full">
                             <p>
                             Раздвижная система без теплоизоляции выполнена на основе рамы с 2 направляющими – креативное решение для помещений, максимально наполненных дневным светом
                             </p>
@@ -222,8 +222,8 @@ export default function AlumSlideDoors() {
                                 <li>Ручная аварийная разблокировка в случае сбоя электросети</li>
                                 <li>Простое техобслуживание и уход за приводами и блокираторами</li>
                             </ul>
-                        </div>
-                    </div>
+                        {/* </div> */}
+                    {/* </div> */}
                 </div>
             </div>
         </MainLayout>

@@ -10,8 +10,8 @@ export default function WarmGlazing() {
                 <div className="full">
                     <h2>Schüco Окно AWS 120 CC.SI</h2>
                 </div>
-                <img src="/static/opens/WG/WG1.png" alt="" className="f3" />
-                <div className="flex column st3">
+                <img src="/static/opens/WG/WG1.png" alt="" className="f3 mobile-full" />
+                <div className="flex column st3 mobile-full">
                     <p>
                         Оптимизированные спаренные окна Schüco со встроенными
                         функциями комфорта и проветривания – идеальный набор для
@@ -106,8 +106,8 @@ export default function WarmGlazing() {
                 <div className="full">
                     <h2>Schüco Окно AWS 112 IC</h2>
                 </div>
-                <img src="/static/opens/WG/WG2.jpg" alt="" className="f3" />
-                <div className="flex column st3">
+                <img src="/static/opens/WG/WG2.jpg" alt="" className="f3 mobile-full" />
+                <div className="flex column st3 mobile-full">
                     <p>
                         Алюминиевая оконная система с сертификатом
                         &quot;пассивного дома&quot; для удовлетворения самых
@@ -207,8 +207,8 @@ export default function WarmGlazing() {
                 <div className="full">
                     <h2>Reynaers CS 104</h2>
                 </div>
-                <img src="/static/opens/WG/WG3.jpg" alt="" className="f3" />
-                <div className="flex column st3">
+                <img src="/static/opens/WG/WG3.jpg" alt="" className="f3 mobile-full" />
+                <div className="flex column st3 mobile-full">
                     <p>Решение для энергопассивных домов.</p>
                     <p>
                         Concept System&reg; 104 является нашей самой
@@ -245,8 +245,8 @@ export default function WarmGlazing() {
                 <div className="full">
                     <h2>Alutech ALT W72</h2>
                 </div>
-                <img src="/static/opens/WG/WG4.jpg" alt="" className="f3" />
-                <div className="flex column st3">
+                <img src="/static/opens/WG/WG4.jpg" alt="" className="f3 mobile-full" />
+                <div className="flex column st3 mobile-full">
                     <h3>Технические характеристики:</h3>
                     <ul>
                         <li>Звукоизоляция - до 43 дБ</li>
@@ -262,8 +262,8 @@ export default function WarmGlazing() {
                 <div className="full">
                     <h2>Alutech ALT W62</h2>
                 </div>
-                <img src="/static/opens/WG/WG5.png" alt="" className="f3" />
-                <div className="flex column st3">
+                <img src="/static/opens/WG/WG5.png" alt="" className="f3 mobile-full" />
+                <div className="flex column st3 mobile-full">
                     <h3>Технические характеристики:</h3>
                     <ul>
                         <li>Звукоизоляция - до 33 дБ</li>

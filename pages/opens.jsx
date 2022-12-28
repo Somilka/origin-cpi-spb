@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import WinsMain from '../components/WinsMain';
 import MainLayout from '../layouts/MainLayout';
+import OpensCategories from '../components/OpensCategories';
 
 import Link from 'next/dist/client/link';
 import WinsPVH from '../components/WinsPVH';
@@ -13,39 +14,40 @@ export default function Opens() {
 		setWinNav
 	] = useState(0);
 
-	const OpensCategories = [
-		{
-			id: 0,
-			title: 'Общее',
-			link: '/opens/'
-		},
-		{
-			id: 1,
-			title: 'Окна ПВХ',
-			link: '/opens/pvh/'
-		},
-		{
-			id: 2,
-			title: 'Алюминиевые окна',
-			link: '/opens/alum/'
-		},
-		{
-			id: 3,
-			title: 'Деревянные окна',
-			link: '/opens/wooden'
-		},
-		{
-			id: 4,
-			title: 'Противопожарные двери и окна',
-			link: '/opens/fire-fighting'
-		}
-	];
+	// const OpensCategories = [
+	// 	{
+	// 		id: 0,
+	// 		title: 'Общее',
+	// 		link: '/opens/'
+	// 	},
+	// 	{
+	// 		id: 1,
+	// 		title: 'Окна ПВХ',
+	// 		link: '/opens/pvh/'
+	// 	},
+	// 	{
+	// 		id: 2,
+	// 		title: 'Алюминиевые окна',
+	// 		link: '/opens/alum/'
+	// 	},
+	// 	{
+	// 		id: 3,
+	// 		title: 'Деревянные окна',
+	// 		link: '/opens/wooden'
+	// 	},
+	// 	{
+	// 		id: 4,
+	// 		title: 'Противопожарные двери и окна',
+	// 		link: '/opens/fire-fighting'
+	// 	}
+	// ];
 
 	return (
 		<MainLayout>
 			<div className='content'>
 				<div className='win-nav'>
-					{OpensCategories.map(({id, title, link}, i) => (
+					<OpensCategories />
+					{/* {OpensCategories.map(({id, title, link}, i) => (
 						<Link key={id} href={link}>
 							<div
 								className={winNav == id ? 'win-nav-item selected' : 'win-nav-item'}
@@ -56,7 +58,7 @@ export default function Opens() {
 								{title}
 							</div>
 						</Link>
-					))}
+					))} */}
 				</div>
 			</div>
 			<div className='content'>
@@ -96,11 +98,11 @@ export default function Opens() {
 					</div>
 					<div className='t3 card static bigger-gap h100 mobile-full'>
 						<h3 className='w100 tac'>Деревянные окна</h3>
-						<img src='/static/opens/brusbox/brusbox_60-4-mini.png' alt='' />
+						<img src='/static/mainWindow/wooden.png' alt='' />
 						<div className='flex column ais'>
-							<Link href='/opens/wooden'>
-								<div className='card static wa'>Деревянные</div>
-							</Link>
+							{/* <Link href='/opens/wooden'> */}
+								{/* <div className='card static wa'>Деревянные</div> */}
+							{/* </Link> */}
 						</div>
 					</div>
 				</div>
@@ -108,9 +110,9 @@ export default function Opens() {
 			<div className='content'>
 				<h2 className='full tac'>Самые популярные профили</h2>
 				<div className='flex column jcsb aie h100 f3 mobile-full'>
-					<div className='flex column aie'>
+					<div className='flex column aie w100'>
 						<h3 style={{alignSelf: 'start'}}>Veka Euroline 58</h3>
-						<img src='/static/opens/veka/veka_euroline.png' alt='' />
+						<img src='/static/opens/veka_euroline_main.png' alt='' />
 					</div>
 					<div className='flex column aie'>
 						<div className='cost'>от 30 300 руб.</div>
@@ -120,10 +122,10 @@ export default function Opens() {
 					</div>
 				</div>
 				<div className='flex column jcsb aie h100 s3 mobile-full'>
-					<div className='flex column aie'>
+					{/* <div className='flex column aie'> */}
 						<h3 style={{alignSelf: 'start'}}>Rehau GENEO</h3>
 						<img src='/static/opens/rehau/rehau_geneo.png' alt='' />
-					</div>
+					{/* </div> */}
 					<div className='flex column aie'>
 						<div className='cost'>от 16 900 руб.</div>
 						<Link href='/opens/pvh/rehau/geneo'>
@@ -132,7 +134,7 @@ export default function Opens() {
 					</div>
 				</div>
 				<div className='flex column jcsb aie h100 t3 mobile-full'>
-					<div className='flex column aie'>
+					<div className='flex column aie w100'>
 						<h3 style={{alignSelf: 'start'}}>Brusbox 60-4</h3>
 						<img src='/static/opens/brusbox/brusbox_60-4.png' alt='' />
 					</div>

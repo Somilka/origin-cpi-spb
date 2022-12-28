@@ -5,32 +5,32 @@ export default function OpensCategories(props) {
     const [winNav, setWinNav] = useState(props.winNav);
 
     const OpensCategories = [
-        {
-            id: 0,
-            title: "Общее",
-            link: "/opens",
-        },
-        {
-            id: 1,
-            title: "Окна ПВХ",
-            link: "/opens/pvh",
-        },
-        {
-            id: 2,
-            title: "Алюминиевые окна",
-            link: "/opens/alum",
-        },
-        {
-            id: 3,
-            title: "Деревянные окна",
-            link: "/opens/wooden",
-        },
-        {
-            id: 4,
-            title: "Противопожарные двери и окна",
-            link: "/opens/ff-wins-doors",
-        },
-    ];
+            {
+                id: 0,
+                title: "Общее",
+                link: "/opens",
+            },
+            {
+                id: 1,
+                title: "Окна ПВХ",
+                link: "/opens/pvh",
+            },
+            {
+                id: 2,
+                title: "Алюминиевые окна",
+                link: "/opens/alum",
+            },
+            // {
+            //     id: 3,
+            //     title: "Деревянные окна",
+            //     link: "/opens/wooden",
+            // },
+            {
+                id: 4,
+                title: "Противопожарные двери и окна",
+                link: "/opens/fire-fighting",
+            },
+        ];
 
     return (
         <div className="win-nav">

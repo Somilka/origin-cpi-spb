@@ -1,77 +1,82 @@
 .welcomeText {
-	grid-column-start: 1;
-	grid-column-end: 6;
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .welcomePar,
 .welcomeTitle {
-	color: #fff;
+    color: #fff;
 }
 
 .welcomeWin {
-	grid-column-start: 7;
-	grid-column-end: 13;
-	display: grid;
-	grid-gap: 20px;
-	gap: 20px;
-	grid-row-gap: 20px;
-	row-gap: 20px;
-	grid-template-columns: repeat(6, 60px);
+    grid-column-start: 7;
+    grid-column-end: 13;
+    display: grid;
+    grid-gap: 20px;
+    gap: 20px;
+    grid-row-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: repeat(6, 60px);
 }
 
 .welcomeWinCard {
-	width: 100%;
-	flex: 1 1;
-	padding: 20px;
-	border-radius: 18px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 10px;
-	height: 220px;
-	position: relative;
-	backdrop-filter: blur(40px) saturate(160%) contrast(120%);
-	z-index: 2;
+    width: 100%;
+    flex: 1 1;
+    padding: 20px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    height: 220px;
+    position: relative;
+    backdrop-filter: blur(40px) saturate(160%) contrast(120%);
+    z-index: 2;
 }
 
 .welcomeWinCard:before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #fff;
-	z-index: -1;
-	content: "";
-	border-radius: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+    content: "";
+    border-radius: 18px;
 }
 
 .welcomeWinCard:nth-child(odd) {
-	grid-column-start: 1;
-	grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 .welcomeWinCard:nth-child(2n) {
-	grid-column-start: 4;
-	grid-column-end: 7;
+    grid-column-start: 4;
+    grid-column-end: 7;
 }
 
 .welcomeWinCard:hover {
-	cursor: pointer;
-	filter: brightness(.9);
+    cursor: pointer;
+    filter: brightness(.9);
+}
+
+.welcomeWinCard:nth-child(3):hover {
+    cursor: default;
+    filter: none;
 }
 
 .welcomeWinCardText {
-	color: #000;
-	font-size: 16px;
-	font-weight: 700;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 // .welcomeWinCardImg {
@@ -79,116 +84,102 @@
 //     height: 50px;
 //     border-radius: 12px
 // }
-
 .welcomeWinCardImg {
-	flex: 1;
-	height: 50px;
-	border-radius: 12px;
+    flex: 1;
+    height: 50px;
+    border-radius: 12px;
 }
 
 @media only screen and (max-width: 1200px) {
-	.welcomeWin {
-		grid-template-columns: repeat(6, 50px);
-		gap: 16px;
-		row-gap: 16px;
-	}
-
-	.welcomeWinCard {
-		height: 182px;
-		padding: 16px;
-		gap: 16px;
-	}
+    .welcomeWin {
+        grid-template-columns: repeat(6, 50px);
+        gap: 16px;
+        row-gap: 16px;
+    }
+    .welcomeWinCard {
+        height: 182px;
+        padding: 16px;
+        gap: 16px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
-	.welcomeWin {
-		grid-template-columns: repeat(6, 40px);
-		gap: 12px;
-		row-gap: 12px;
-	}
-
-	.welcomeWinCard {
-		height: 144px;
-		padding: 12px;
-		gap: 12px;
-	}
-
-	.welcomeWinCardText {
-		font-size: 12px;
-	}
+    .welcomeWin {
+        grid-template-columns: repeat(6, 40px);
+        gap: 12px;
+        row-gap: 12px;
+    }
+    .welcomeWinCard {
+        height: 144px;
+        padding: 12px;
+        gap: 12px;
+    }
+    .welcomeWinCardText {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-	.content,
-	.slider {
-		grid-template-columns: repeat(12, 30px);
-		gap: 8px;
-		row-gap: 20px;
-	}
-
-	.welcomeWin {
-		grid-column-start: 1;
-		grid-template-columns: repeat(12, 30px);
-		gap: 8px;
-		row-gap: 8px;
-	}
-
-	.welcomeWinCard {
-		height: 220px;
-		padding: 16px;
-		gap: 16px;
-	}
-	.welcomeWinCard:nth-child(odd) {
-		grid-column-start: 1;
-		grid-column-end: 7;
-	}
-
-	.welcomeWinCard:nth-child(2n) {
-		grid-column-start: 7;
-		grid-column-end: 13;
-	}
-
-	.welcomeWinCardText {
-		font-size: 18px;
-	}
-
-	.welcomeText {
-		grid-column-start: 1;
-		grid-column-end: 13;
-	}
-
-    
-}
-@media only screen and (max-width: 480px) {
-	.welcomeWin {
-		grid-column-start: 1;
+    .content,
+    .slider {
+        grid-template-columns: repeat(12, 30px);
+        gap: 8px;
+        row-gap: 20px;
+    }
+    .welcomeWin {
+        grid-column-start: 1;
+        grid-template-columns: repeat(12, 30px);
+        gap: 8px;
+        row-gap: 8px;
+    }
+    .welcomeWinCard {
+        height: 220px;
+        padding: 16px;
+        gap: 16px;
+    }
+    .welcomeWinCard:nth-child(odd) {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+    .welcomeWinCard:nth-child(2n) {
+        grid-column-start: 7;
         grid-column-end: 13;
-		grid-template-columns: repeat(12, 20px);
-		gap: 4px;
-		row-gap: 4px;
-	}
+    }
+    .welcomeWinCardText {
+        font-size: 18px;
+    }
+    .welcomeText {
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+}
 
-	.welcomeWinCard {
-		height: 140px;
-		padding: 12px;
-		gap: 12px;
-	}
-	.welcomeWinCard:nth-child(odd) {
-		grid-column-start: 1;
-		grid-column-end: 7;
-	}
-
-	.welcomeWinCard:nth-child(2n) {
-		grid-column-start: 7;
-		grid-column-end: 13;
-	}
-
-	.welcomeWinCardText {
-		font-size: 12px;
-	}
-
-	.welcomeText {
-		grid-column-start: 1;
-		grid-column-end: 13;
-	}
+@media only screen and (max-width: 480px) {
+    .welcomeWin {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-template-columns: repeat(12, 20px);
+        gap: 4px;
+        row-gap: 4px;
+    }
+    .welcomeWinCard {
+        height: 140px;
+        padding: 12px;
+        gap: 12px;
+    }
+    .welcomeWinCard:nth-child(odd) {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+    .welcomeWinCard:nth-child(2n) {
+        grid-column-start: 7;
+        grid-column-end: 13;
+    }
+    .welcomeWinCardText {
+        font-size: 12px;
+    }
+    .welcomeText {
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
 }
