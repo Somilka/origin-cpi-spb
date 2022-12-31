@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import WinsMain from '../components/WinsMain';
 import MainLayout from '../layouts/MainLayout';
 import OpensCategories from '../components/OpensCategories';
@@ -46,7 +46,7 @@ export default function Opens() {
 		<MainLayout>
 			<div className='content'>
 				<div className='win-nav'>
-					<OpensCategories />
+					<OpensCategories winNav={winNav} />
 					{/* {OpensCategories.map(({id, title, link}, i) => (
 						<Link key={id} href={link}>
 							<div
@@ -67,8 +67,12 @@ export default function Opens() {
 			<div className='block'>
 				<div className='content'>
 					<div className='f3 card static bigger-gap h100 mobile-full'>
-						<h3 className='w100 tac'>Пластиковые окна</h3>
-						<img src='/static/opens/veka/veka_euroline.png' alt='' />
+						<Link href="/opens/pvh">
+							<div className="flex column bigger-gap hoverable h100">
+								<h3 className='w100 tac'>Пластиковые окна</h3>
+								<img src='/static/opens/veka/veka_euroline.png' alt='' />
+							</div>
+						</Link>
 						<div className='flex column ais'>
 							<Link href='/opens/pvh/veka'>
 								<div className='card static wa'>Veka</div>
@@ -82,8 +86,12 @@ export default function Opens() {
 						</div>
 					</div>
 					<div className='s3 card static bigger-gap h100 mobile-full'>
-						<h3 className='w100 tac'>Алюминивые окна</h3>
-						<img src='/static/opens/rehau/rehau3.jpg' alt='' />
+						<Link href="/opens/alum">
+							<div className="flex column bigger-gap hoverable h100">
+								<h3 className='w100 tac'>Алюминивые окна</h3>
+								<img src='/static/mainWindow/alum.png' alt='' />
+							</div>
+						</Link>
 						<div className='flex column ais'>
 							<Link href='/opens/alum/light-septums'>
 								<div className='card static wa'>Перегородки</div>
@@ -101,7 +109,7 @@ export default function Opens() {
 						<img src='/static/mainWindow/wooden.png' alt='' />
 						<div className='flex column ais'>
 							{/* <Link href='/opens/wooden'> */}
-								{/* <div className='card static wa'>Деревянные</div> */}
+							{/* <div className='card static wa'>Деревянные</div> */}
 							{/* </Link> */}
 						</div>
 					</div>
@@ -109,10 +117,10 @@ export default function Opens() {
 			</div>
 			<div className='content'>
 				<h2 className='full tac'>Самые популярные профили</h2>
-				<div className='flex column jcsb aie h100 f3 mobile-full'>
+				<div className='flex column jcsb aie h100 f3 open-ordered mob-left mobile-left'>
 					<div className='flex column aie w100'>
-						<h3 style={{alignSelf: 'start'}}>Veka Euroline 58</h3>
-						<img src='/static/opens/veka_euroline_main.png' alt='' />
+						<Link href='/opens/pvh/veka/euroline'><h3 style={{ alignSelf: 'start' }} className="hoverable">Veka Euroline 58</h3></Link>
+						<Link href='/opens/pvh/veka/euroline'><img src='/static/opens/veka_euroline_main.png' alt='' className="hoverable" /></Link>
 					</div>
 					<div className='flex column aie'>
 						<div className='cost'>от 30 300 руб.</div>
@@ -121,10 +129,10 @@ export default function Opens() {
 						</Link>
 					</div>
 				</div>
-				<div className='flex column jcsb aie h100 s3 mobile-full'>
+				<div className='flex column jcsb aie h100 s3 mobile-full open-ordered '>
 					{/* <div className='flex column aie'> */}
-						<h3 style={{alignSelf: 'start'}}>Rehau GENEO</h3>
-						<img src='/static/opens/rehau/rehau_geneo.png' alt='' />
+					<Link href='/opens/pvh/rehau/geneo'><h3 style={{ alignSelf: 'start' }} className="hoverable">Rehau GENEO</h3></Link>
+					<Link href='/opens/pvh/rehau/geneo'><img src='/static/opens/rehau/rehau_geneo.png' alt='' className="hoverable" /></Link>
 					{/* </div> */}
 					<div className='flex column aie'>
 						<div className='cost'>от 16 900 руб.</div>
@@ -133,10 +141,10 @@ export default function Opens() {
 						</Link>
 					</div>
 				</div>
-				<div className='flex column jcsb aie h100 t3 mobile-full'>
+				<div className='flex column jcsb aie h100 t3 mob-right open-ordered mobile-right'>
 					<div className='flex column aie w100'>
-						<h3 style={{alignSelf: 'start'}}>Brusbox 60-4</h3>
-						<img src='/static/opens/brusbox/brusbox_60-4.png' alt='' />
+						<Link href='/opens/pvh/veka/euroline'><h3 style={{ alignSelf: 'start' }} className="hoverable" >Brusbox 60-4</h3></Link>
+						<Link href='/opens/pvh/veka/euroline'><img src='/static/opens/brusbox/brusbox_60-4.png' alt='' className="hoverable" /></Link>
 					</div>
 					<div className='flex column aie'>
 						<div className='cost'>от 77 777 руб.</div>

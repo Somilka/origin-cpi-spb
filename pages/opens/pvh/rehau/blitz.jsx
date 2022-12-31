@@ -9,10 +9,10 @@ export default function Grazio() {
                 <div className="title">Rehau Blitz</div>
             </div>
             <div className="content">
-                <div className="hl flex column">
-                    <img src="/static/opens/rehau/rehau_blitz.png" alt="" />
-                </div>
-                <div className="hr flex column jcsb h100">
+                {/* <div className="hl flex column"> */}
+                    <img src="/static/opens/rehau/rehau_blitz.png" className="f3 mobile-full" alt="" />
+                {/* </div> */}
+                <div className="st3 mobile-full flex column jcsb h100">
                     <h3>Технические характеристики профиля</h3>
                     <p>Модернизированный профиль Рехау Блиц подходит для остекления промышленных и жилых объектов. В нем соединяются традиционные свойства бюджетной линейки оконных профилей и новейших разработок немецкого производителя. Информация из технического каталога Рехау Блиц Нью предоставляет описание свойств и характеристики профиля:</p>
                     <ul>

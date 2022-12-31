@@ -11,6 +11,8 @@ body {
     overflow-x: hidden;
 }
 
+html {}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -690,11 +692,10 @@ span.mini {
     object-fit: fill;
 }
 
-.content.fittings {
-    grid-template-columns: repeat(3, 300px);
-    gap: 20px;
-}
-
+// .content.fittings {
+//     grid-template-columns: repeat(3, 300px);
+//     gap: 20px;
+// }
 .fitting {
     border-radius: 18px;
     box-shadow: 0px 0px 10px -4px black;
@@ -811,6 +812,11 @@ span.mini {
 .card.static .card.static:hover {
     cursor: pointer;
     filter: brightness(.9);
+}
+
+.card.static h3:hover,
+.card.static img:hover {
+    cursor: pointer;
 }
 
 .card img {
@@ -1031,6 +1037,35 @@ header .burger:hover,
     z-index: 9;
 }
 
+.crossed {
+    text-decoration: line-through;
+}
+
+img.hoverable {
+    pointer-events: all;
+}
+
+.hoverable:hover {
+    cursor: pointer;
+}
+
+.fr {
+    float: right;
+    width: 50%;
+}
+
+.mainBlueColor {
+    color: $mainBlue;
+}
+
+.min-text {
+    font-size: 12px;
+}
+
+.undercover {
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 1200px) {
     .content,
     .slider {
@@ -1219,6 +1254,28 @@ header .burger:hover,
         grid-column-start: 1;
         grid-column-end: 13;
     }
+    .fitting {
+        height: 323px;
+    }
+    img {
+        max-height: 450px;
+    }
+    img.f3,
+    img.s3,
+    img.t3,
+    img.hl,
+    img.hr {
+        object-fit: contain;
+    }
+    // .open-ordered:nth-child(1) {
+    //     order: 1;
+    // }
+    .open-ordered:nth-child(3) {
+        order: 2;
+    }
+    // .open-ordered:nth-child(2) {
+    //     order: 3;
+    // }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1294,9 +1351,20 @@ header .burger:hover,
         grid-column-start: 1;
         grid-column-end: 13;
     }
+    .mobile-left {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+    .mobile-right {
+        grid-column-start: 7;
+        grid-column-end: 13;
+    }
     .mobile-full {
         grid-column-start: 1;
         grid-column-end: 13;
+    }
+    .fitting {
+        height: auto;
     }
 }
 

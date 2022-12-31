@@ -7,8 +7,11 @@ export default function Brusbox() {
  return (
     <MainLayout>
         <div className="content">
-                <img className="img-brusbox" src="/static/dev_logo.png" alt="" />
-                <div className="full flex column column-brusbox">
+            <div className="title">Подоконники Brusbox</div>
+        </div>
+        <div className="content">
+                <img className="full" src="/static/sills/brusbox.jpg" alt="" />
+                <div className="full flex column">
                     <p className="">
                     В 2004 году компания <b>BRUSBOX</b> начала выпуск ПВХ подоконников под маркой <b>BRUSBOX</b>. На сегодняшний день компания <b>BRUSBOX</b> является одним из крупнейших поставщиков ПВХ подоконников на российском рынке. Объемы производства переваливают за миллион квадратных метров в год.<br/>
                             На сегодняшний день компания <b>БРУСБОКС</b> производит 2 типа подоконников — подоконник СТАНДАРТ (шириной до 800 мм) и подоконник AERO (шириной до 650 мм).<br/>

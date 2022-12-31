@@ -7,9 +7,9 @@ export default function Fittings() {
             <div className="content">
                 <div className="title">Фурнитура и ручки</div>
             </div>
-            <div className="content fittings">
+            <div className="content">
             <Link href="/fittings/sandwiches/sandwich10">
-                <div className="fitting">
+                <div className="fitting h100 f3 mob-left">
                 <div className="fitting-name">
                         <p className="fitting-title">
                         Сэндвич-панель стандарт
@@ -26,7 +26,7 @@ export default function Fittings() {
                 </div>
             </Link>
             <Link href="/fittings/sandwiches/sandwich24">
-                <div className="fitting">
+                <div className="fitting h100 s3 mob-right">
                 <div className="fitting-name">
                         <p className="fitting-title">
                         Сэндвич-панель стандарт
@@ -43,7 +43,7 @@ export default function Fittings() {
                 </div>
             </Link>
             <Link href="/fittings/sandwiches/sandwich32">
-                <div className="fitting">
+                <div className="fitting h100 t3 mob-left">
                 <div className="fitting-name">
                         <p className="fitting-title">
                         Сэндвич-панель стандарт
@@ -60,7 +60,7 @@ export default function Fittings() {
                 </div>
             </Link>
             <Link href="/fittings/handles/hoppe">
-                <div className="fitting">
+                <div className="fitting h100 f3 mob-right">
                     <div className="fitting-name">
                         <p className="fitting-title">
                         Ручка оконная
@@ -74,7 +74,7 @@ export default function Fittings() {
                 </div>
             </Link>
             <Link href="/fittings/handles/roto">
-                <div className="fitting">
+                <div className="fitting h100 s3 mob-left">
                     <div className="fitting-name">
                         <p className="fitting-title">
                         Ручка оконная

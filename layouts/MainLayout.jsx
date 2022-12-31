@@ -1,24 +1,32 @@
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Head from 'next/head';
-import {useState} from 'react';
+import { useState } from 'react';
 
-import {ModalContext} from '../components/modules/ModalsManagerContext';
+import { ModalContext } from '../components/modules/ModalsManagerContext';
 
 import Modal from '../components/Modal';
 
 // import '../styles/header.css';
 
 const navigation = [
-	{id: 1, title: 'Главная', path: '/'},
-	{id: 2, title: 'Окна и двери', path: '/opens'},
-	{id: 3, title: 'Стеклопакеты', path: '/windows'}
+	{ id: 1, title: 'Главная', path: '/' },
+	{ id: 2, title: 'Окна и двери', path: '/opens' },
+	{ id: 3, title: 'Стеклопакеты', path: '/windows' }
 	// { id: 4, title: "Цены", path: "/prices" },
 ];
 
-export default function MainLayout({children, title, page}) {
-	const {pathname} = useRouter();
+export default function MainLayout({ children, title, page }) {
+	const { pathname } = useRouter();
 	console.log(pathname);
+
+	// Router.onRouteChangeComplete = () => {
+	// console.log('routechangecomplete');
+	// window.scroll({
+	// 	top: 0,
+	// 	left: 0,
+	// });
+	// };
 
 	const [
 		mobMenuShow,
@@ -52,7 +60,7 @@ export default function MainLayout({children, title, page}) {
 						<img src='/static/logo.png' alt='' className='img-logo' />
 					</Link>
 					<nav>
-						{navigation.map(({id, title, path}) => (
+						{navigation.map(({ id, title, path }) => (
 							<Link key={id} href={path}>
 								<a
 									className={
@@ -77,8 +85,8 @@ export default function MainLayout({children, title, page}) {
 					<div className='contacts'>
 						<div className="contact phone">+7 911 950 24 11</div>
 						<div className='contact phone'>+7 921 090 42 50</div>
-						<a className='contact mail'> 
-						{/* href='mailto:info.cpi-spb@yandex.ru'  */}
+						<a className='contact mail'>
+							{/* href='mailto:info.cpi-spb@yandex.ru'  */}
 							info.cpi-spb@yandex.ru
 						</a>
 					</div>
@@ -96,7 +104,7 @@ export default function MainLayout({children, title, page}) {
 										Закрыть
 									</div>
 									<div className='menuNav'>
-										{navigation.map(({id, title, path}) => (
+										{navigation.map(({ id, title, path }) => (
 											<Link key={id} href={path}>
 												<a
 													className={
@@ -121,6 +129,7 @@ export default function MainLayout({children, title, page}) {
 								</div>
 								<div className='menuBottom'>
 									<div className='menuContacts'>
+										<div className="contact phone">+7 911 950 24 11</div>
 										<div className='menuContact phone'>+7 921 090 42 50</div>
 										<a href='mailto:info.cpi-spb@yandex.ru' className='menuContact mail'>
 											info.cpi-spb@yandex.ru

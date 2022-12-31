@@ -10,14 +10,14 @@ export default function ColdGlazing() {
                 <div className="full flex column bigger-gap">
                     <h2>Alutech ALT C43</h2>
                 </div>
-                <div className="hl flex ais h100">
+                <div className="f3 mobile-full flex ais h100">
                     <img
-                        src="/static/opens/LS/LS1.jpg"
+                        src="/static/opens/CG/CG1.jpg"
                         className="h100"
                         alt=""
                     />
                 </div>
-                <div className="hr flex column">
+                <div className="st3 mobile-full flex column">
                     <div className="flex column">
                         <p>Алюминиевые окна и двери без термоизоляции C43</p>
                         <p>

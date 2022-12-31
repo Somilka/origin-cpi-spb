@@ -10,10 +10,10 @@ export default function Delight() {
                 <div className="title">Rehau Delight Design</div>
             </div>
             <div className="content">
-                <div className="hl flex column">
-                    <img src="/static/opens/rehau/rehau_blitz.png" alt="" />
-                </div>
-                <div className="hr flex column jcsb h100">
+                {/* <div className="hl flex column"> */}
+                    <img src="/static/opens/rehau/rehau_blitz.png" className="f3 mobile-full" alt="" />
+                {/* </div> */}
+                <div className="st3 mobile-full flex column jcsb h100">
                     <h3>Технические характеристики Delight:</h3>
                     <ul>
                         <li>Системная глубина и число камер — 70 мм/5.</li>
