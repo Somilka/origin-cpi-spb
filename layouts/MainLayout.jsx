@@ -17,6 +17,8 @@ const navigation = [
 ];
 
 export default function MainLayout({ children, title, page }) {
+	// document.body.addEventListener('touchstart', function (e) { e.preventDefault(); });
+
 	const { pathname } = useRouter();
 	console.log(pathname);
 
@@ -99,6 +101,7 @@ export default function MainLayout({ children, title, page }) {
 					{mobMenuShow == 1 ? (
 						<div className='mobileMenuBlock'>
 							<div className='mobileMenu'>
+								{/* <div className="mobileMenuContent"> */}
 								<div className='menuTop'>
 									<div className='menuClose' onClick={() => closeMenu()}>
 										Закрыть
@@ -129,19 +132,25 @@ export default function MainLayout({ children, title, page }) {
 								</div>
 								<div className='menuBottom'>
 									<div className='menuContacts'>
-										<div className="contact phone">+7 911 950 24 11</div>
+										<div className="menuContact phone">+7 911 950 24 11</div>
 										<div className='menuContact phone'>+7 921 090 42 50</div>
 										<a href='mailto:info.cpi-spb@yandex.ru' className='menuContact mail'>
 											info.cpi-spb@yandex.ru
 										</a>
 									</div>
 								</div>
+								{/* </div> */}
 							</div>
 							<div className='black' onClick={() => closeMenu()} />
 						</div>
 					) : null}
 					{children}
 				</main>
+				<footer>
+					<div className="content">
+
+					</div>
+				</footer>
 			</div>
 		</ModalContext.Provider>
 	);

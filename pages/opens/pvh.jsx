@@ -104,7 +104,7 @@ export default function PVH() {
                         </div>
                     </div>
                 </Link>
-                <Link href="/opens/pvh/veka">
+                {/* <Link href="/opens/pvh/veka">
                     <div className="window-pvh-card">
                         <div className="window-pvh-card-title">VEKA</div>
                         <div className="window-pvh-card-que">
@@ -149,7 +149,7 @@ export default function PVH() {
                             медучреждениях и детских образовательных центрах.
                         </div>
                     </div>
-                </Link>
+                </Link> */}
                 <Link href="/opens/pvh/brusbox">
                     <div className="window-pvh-card">
                         <div className="window-pvh-card-title">Brusbox</div>

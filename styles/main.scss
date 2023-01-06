@@ -33,6 +33,10 @@ ol li::marker {
     font-weight: normal;
 }
 
+footer {
+    background-color: $mainBlue;
+}
+
 .content {
     display: grid;
     grid-template-columns: repeat(12, 60px);
@@ -932,6 +936,9 @@ header .burger {
     // background-image: "/static/burger/burger.svg";
     border-radius: 6px;
     background-color: $mainBlue;
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
 
 header .burger:hover,
@@ -962,9 +969,22 @@ header .burger:hover,
     align-items: end;
     justify-content: space-between;
     box-shadow: 0px 0px 10px 0px gray;
-    height: 100vh;
+    height: 100%;
 }
 
+// .mobileMenuContent {
+//     width: 100%;
+//     background-color: #fff;
+//     z-index: 10;
+//     padding: 20px;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 40px;
+//     align-items: end;
+//     justify-content: space-between;
+//     // box-shadow: 0px 0px 10px 0px gray;
+//     height: 100%;
+// }
 .menuNav {
     display: flex;
     flex-direction: column;
@@ -1030,8 +1050,8 @@ header .burger:hover,
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: black;
     opacity: .5;
     z-index: 9;
@@ -1136,9 +1156,19 @@ img.hoverable {
         grid-column-start: 7;
         grid-column-end: 13;
     }
+    header .contacts {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    html,
+    body,
+    main,
+    .layout {
+        max-height: 100%;
+        height: 100%;
+    }
     .content,
     .slider {
         grid-template-columns: repeat(12, 30px);
@@ -1182,6 +1212,15 @@ img.hoverable {
         width: 100%;
         height: 60px;
         border-radius: 12px;
+        transition: none;
+    }
+    .slide-control:hover {
+        background-color: #fff;
+        cursor: default;
+    }
+    .slide-control:active {
+        cursor: pointer;
+        background-color: #ededed;
     }
     .slides {
         order: 2;
@@ -1289,7 +1328,7 @@ img.hoverable {
         background-size: 1800px;
     }
     .slide {
-        width: 644px;
+        width: 284px;
     }
     .slider__content {
         height: 181px;

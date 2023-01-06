@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 const slides = [
     {id: 1, src: '/static/slides/slide1.png', alt: ''},
     {id: 2, src: '/static/slides/slide4.png', alt: ''},
-    {id: 3, src: '/static/slides/slide1.png', alt: ''},
+    {id: 3, src: '/static/slides/slide3.png', alt: ''},
     {id: 4, src: '/static/slides/slide4.png', alt: ''},
 ]
 

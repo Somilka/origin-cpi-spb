@@ -70,13 +70,13 @@ export default function Opens() {
 						<Link href="/opens/pvh">
 							<div className="flex column bigger-gap hoverable h100">
 								<h3 className='w100 tac'>Пластиковые окна</h3>
-								<img src='/static/opens/veka/veka_euroline.png' alt='' />
+								<img src='/static/opens/brusbox/brusbox_60-4-mini.png' alt='' />
 							</div>
 						</Link>
 						<div className='flex column ais'>
-							<Link href='/opens/pvh/veka'>
+							{/* <Link href='/opens/pvh/veka'>
 								<div className='card static wa'>Veka</div>
-							</Link>
+							</Link> */}
 							<Link href='/opens/pvh/rehau'>
 								<div className='card static wa'>Rehau</div>
 							</Link>
@@ -117,7 +117,7 @@ export default function Opens() {
 			</div>
 			<div className='content'>
 				<h2 className='full tac'>Самые популярные профили</h2>
-				<div className='flex column jcsb aie h100 f3 open-ordered mob-left mobile-left'>
+				{/* <div className='flex column jcsb aie h100 f3 open-ordered mob-left mobile-left'>
 					<div className='flex column aie w100'>
 						<Link href='/opens/pvh/veka/euroline'><h3 style={{ alignSelf: 'start' }} className="hoverable">Veka Euroline 58</h3></Link>
 						<Link href='/opens/pvh/veka/euroline'><img src='/static/opens/veka_euroline_main.png' alt='' className="hoverable" /></Link>
@@ -128,8 +128,8 @@ export default function Opens() {
 							<div className='btn'>Подробнее</div>
 						</Link>
 					</div>
-				</div>
-				<div className='flex column jcsb aie h100 s3 mobile-full open-ordered '>
+				</div> */}
+				<div className='flex column jcsb aie h100 hl mobile-full open-ordered '>
 					{/* <div className='flex column aie'> */}
 					<Link href='/opens/pvh/rehau/geneo'><h3 style={{ alignSelf: 'start' }} className="hoverable">Rehau GENEO</h3></Link>
 					<Link href='/opens/pvh/rehau/geneo'><img src='/static/opens/rehau/rehau_geneo.png' alt='' className="hoverable" /></Link>
@@ -141,7 +141,7 @@ export default function Opens() {
 						</Link>
 					</div>
 				</div>
-				<div className='flex column jcsb aie h100 t3 mob-right open-ordered mobile-right'>
+				<div className='flex column jcsb aie h100 hr mob-right open-ordered mobile-right'>
 					<div className='flex column aie w100'>
 						<Link href='/opens/pvh/veka/euroline'><h3 style={{ alignSelf: 'start' }} className="hoverable" >Brusbox 60-4</h3></Link>
 						<Link href='/opens/pvh/veka/euroline'><img src='/static/opens/brusbox/brusbox_60-4.png' alt='' className="hoverable" /></Link>

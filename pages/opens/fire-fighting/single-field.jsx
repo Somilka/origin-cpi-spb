@@ -1,7 +1,9 @@
 import MainLayout from "../../../layouts/MainLayout";
 
-import FFStyles from '/styles/FF.module.scss'
-import MainStyles from '/styles/main.module.scss'
+import FFStyles from '/styles/FF.module.scss';
+import MainStyles from '/styles/main.module.scss';
+
+import Link from "next/link";
 
 export default function SingleField() {
     const data = [
@@ -69,27 +71,29 @@ export default function SingleField() {
     return (
         <MainLayout>
             <div className="content"><h2 className="title">Противопожарные двери однопольные</h2>
-            <p className="full tac">В каталоге представлены популярные размеры одностворчатых дверей. Для определения нужной конструкции выберете размеры коробок, варианты стекла, класс огнестойкости и наличие дополнительных комплектующих. </p></div>
+                <p className="full tac">В каталоге представлены популярные размеры одностворчатых дверей. Для определения нужной конструкции выберете размеры коробок, варианты стекла, класс огнестойкости и наличие дополнительных комплектующих. </p></div>
             <div className="content">
                 {data.map((card, num) =>
-                    <div className={num % 2 == 0 ? "hl flex column bigger-gap aic" : "hr flex column bigger-gap aic"} key={num}>
-                        <h3>{card.title}</h3>
-                        <img src={"/static/opens/FF/FF" + card.imgSrc} className="w50" alt="" />
-                        <div className="flex column w100">
-                            {card.params.map((param, paramNum) =>
-                                <div className="flex jcsb" key={paramNum}>
-                                    <p className="paramTitle">{param.title}</p>
-                                    <p className={param.colored == false ? "paramValue" : "paramValue mainBlueColor"}>{param.value}</p>
-                                </div>
-                            )}
+                    <Link href="/opens/fire-fighting/single-field/dpm-01-60/" key={num}>
+                        <div className={num % 2 == 0 ? "hl flex column bigger-gap aic" : "hr flex column bigger-gap aic"}>
+                            <h3>{card.title}</h3>
+                            <img src={"/static/opens/FF/FF" + card.imgSrc} className="w50" alt="" />
+                            <div className="flex column w100">
+                                {card.params.map((param, paramNum) =>
+                                    <div className="flex jcsb" key={paramNum}>
+                                        <p className="paramTitle">{param.title}</p>
+                                        <p className={param.colored == false ? "paramValue" : "paramValue mainBlueColor"}>{param.value}</p>
+                                    </div>
+                                )}
+                            </div>
+                            <div className="flex column w100 cost">
+                                <p className={FFStyles.oldCost}>Цена: <span className="priceBlock crossed mainBlueColor"><span className="price">{card.price}</span> руб.</span></p>
+                                <p className={FFStyles.currentCost}>Со скидкой: <span className="priceBlock mainBlueColor"><span className="price">{card.salePrice}</span> руб.</span></p>
+                                <p className="min-text mainBlueColor">{card.salePriceComment}</p>
+                            </div>
+                            <div className="btn w100">Заказать</div>
                         </div>
-                        <div className="flex column w100 cost">
-                            <p className={FFStyles.oldCost}>Цена: <span className="priceBlock crossed mainBlueColor"><span className="price">{card.price}</span> руб.</span></p>
-                            <p className={FFStyles.currentCost}>Со скидкой: <span className="priceBlock mainBlueColor"><span className="price">{card.salePrice}</span> руб.</span></p>
-                            <p className="min-text mainBlueColor">{card.salePriceComment}</p>
-                        </div>
-                        <div className="btn w100">Заказать</div>
-                    </div>
+                    </Link>
                 )}
             </div>
         </MainLayout>
