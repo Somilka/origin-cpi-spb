@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, Children} from 'react';
 
 const slides = [
     {id: 1, src: '/static/slides/slide1.png', alt: ''},
@@ -7,7 +7,7 @@ const slides = [
     {id: 4, src: '/static/slides/slide4.png', alt: ''},
 ]
 
-function Slider() {
+function Slider({children}) {
     const [curSlide, upCurSlide] = useState(0);
     const [curPadd, upCurPadd] = useState(0);
     const [intCount, upIntCount] = useState(0);
@@ -27,7 +27,7 @@ function Slider() {
         if (curSlide + 1 < document.querySelectorAll('.slide').length) {
             upCurPadd(Math.round(curPadd) + Math.round(document.querySelector('.slide').getBoundingClientRect().width));
             let tempPadd = Math.round(curPadd) + Math.round(document.querySelector('.slide').getBoundingClientRect().width);
-            console.log(tempPadd);
+            // console.log(tempPadd);
             document.querySelector('.slides').style.marginLeft = Math.round(tempPadd) * -1 + 'px';
             upCurSlide(curSlide + 1);
         } else {
@@ -40,7 +40,7 @@ function Slider() {
     function prevSlide() {
         if (curSlide - 1 >= 0) {
             let tempPadd = Math.round(curPadd) - Math.round(document.querySelector('.slide').getBoundingClientRect().width);
-            console.log(tempPadd);
+            // console.log(tempPadd);
             document.querySelector('.slides').style.marginLeft = Math.abs(Math.round(tempPadd)) * -1 + 'px';
             upCurPadd(tempPadd);
             upCurSlide(curSlide - 1);
@@ -52,7 +52,7 @@ function Slider() {
             // upCurSlide(curSlide - 1);
         } else {
             document.querySelector('.slides').style.marginLeft = Math.abs(((document.querySelectorAll('.slide').length - 1) * Math.round(document.querySelector('.slide').getBoundingClientRect().width))) * -1 + 'px';
-            console.log(((document.querySelectorAll('.slide').length - 1) * Math.round(document.querySelector('.slide').getBoundingClientRect().width)) * -1);
+            // console.log(((document.querySelectorAll('.slide').length - 1) * Math.round(document.querySelector('.slide').getBoundingClientRect().width)) * -1);
             upCurPadd((document.querySelectorAll('.slide').length - 1) * Math.round(document.querySelector('.slide').getBoundingClientRect().width));
             upCurSlide(document.querySelectorAll('.slide').length - 1);
         }
@@ -66,9 +66,10 @@ function Slider() {
                     </div>
                     <div className="slider__content">
                         <div className="slides">
-                            {slides.map(({id, src, alt}) => (
+                            {children}
+                            {/* {slides.map(({id, src, alt}) => (
                                 <img key={id} src={src} alt={alt} className="slide" />
-                            ))}
+                            ))} */}
                             {/* <img src={slide1} alt="" className="slide" /> */}
                             {/* <img src={slide4} alt="" className="slide" /> */}
                             {/* <img src={slide1} alt="" className="slide" /> */}
@@ -80,7 +81,7 @@ function Slider() {
                     </div>
                 {/* </div> */}
                 <div className="slider__navigation">
-                    {slides.map((item, i) => { return showNav(i) })}
+                    {children.map((item, i) => { return showNav(i) })}
                     
                     {/* <div className="slider__nav"></div>
                     <div className="slider__nav"></div>

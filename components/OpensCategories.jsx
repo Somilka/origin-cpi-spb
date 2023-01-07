@@ -30,6 +30,11 @@ export default function OpensCategories(props) {
                 title: "Противопожарные двери и окна",
                 link: "/opens/fire-fighting",
             },
+            {
+                id: 5,
+                title: 'Специализированные двери "Атлант"',
+                link: "/opens/atlant",
+            },
         ];
 
     return (

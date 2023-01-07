@@ -148,7 +148,50 @@ export default function MainLayout({ children, title, page }) {
 				</main>
 				<footer>
 					<div className="content">
-
+						<div className="hl flex column ha bigger-gap">
+							<h2>Контакты</h2>
+							{/* <hr /> */}
+							<div className='contacts flex column'>
+								<p className="contact phone tal">+7 911 950 24 11</p>
+								<p className='contact phone tal'>+7 921 090 42 50</p>
+								<a className='contact mail tal'>
+									{/* href='mailto:info.cpi-spb@yandex.ru'  */}
+									info.cpi-spb@yandex.ru
+								</a>
+							</div>
+						</div>
+						<div className="hr flex column ha bigger-gap">
+							<h2>Навигация</h2>
+							{/* <hr /> */}
+							<div className="flex">
+								<div className="flex column w50">
+									<Link href="/">
+										<a className='nav-item'>Главная</a>
+									</Link>
+									<Link href="/opens/">
+										<a className='nav-item'>Окна и двери</a>
+									</Link>
+									<Link href="/windows/">
+										<a className='nav-item'>Стеклопакеты</a>
+									</Link>
+								</div>
+								<div className="flex column w50">
+									<Link href="/opens/pvh">
+										<a className='nav-item'>Пластиковые окна</a>
+									</Link>
+									<Link href="/opens/alum">
+										<a className='nav-item'>Алюминиевые окна</a>
+									</Link>
+									<a>Деревянные окна</a>
+									<Link href="/opens/fire-fighting">
+										<a className='nav-item'>Противопожарные двери и окна</a>
+									</Link>
+								</div>
+							</div>
+						</div>
+						<div className="full tac">
+							<p style={{ fontSize: '12px' }}>Центр Промышленных Инноваций СПб &copy;2013-2023</p>
+						</div>
 					</div>
 				</footer>
 			</div>

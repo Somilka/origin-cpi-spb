@@ -29,10 +29,10 @@ export default function Index() {
 							</div>
 						</Link>
 						{/* <Link href='/opens/wooden'> */}
-							<div className={styles.welcomeWinCard}>
-								<img className={styles.welcomeWinCardImg} src='/static//mainWindow/wooden.png' alt='dev logo' />
-								<div className={styles.welcomeWinCardText}>Деревянные окна</div>
-							</div>
+						<div className={styles.welcomeWinCard}>
+							<img className={styles.welcomeWinCardImg} src='/static//mainWindow/wooden.png' alt='dev logo' />
+							<div className={styles.welcomeWinCardText}>Деревянные окна</div>
+						</div>
 						{/* </Link> */}
 						<Link href='/opens/fire-fighting'>
 							<div className={styles.welcomeWinCard}>
@@ -43,9 +43,14 @@ export default function Index() {
 					</div>
 				</div>
 			</div>
-			{/* <div className="content"> */}
-			<Slider />
-			{/* </div> */}
+			
+			<Slider>
+				<img src="/static/slides/slide1.png" alt="" className="slide" />
+				<img src="/static/slides/slide3.png" alt="" className="slide" />
+				<img src="/static/slides/slide4.png" alt="" className="slide" />
+				<img src="/static/slides/slide1.png" alt="" className="slide" />
+			</Slider>
+
 			<div className='content'>
 				<Link href='/sills'>
 					<div className='category big'>
