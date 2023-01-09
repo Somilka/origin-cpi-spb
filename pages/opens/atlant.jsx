@@ -46,16 +46,16 @@ export default function Atlant() {
                         <img className="wa"  src="/static/dev_logo.png" alt="" />
                     </div>
                 </Link>
-                <Link href="/">
+                <Link href="/opens/atlant/fire-fighting-hatches/">
                     <div className="card aic f3 mob-left flex column h100">
                         <h3 className="tac">Люки противопожарные</h3>
-                        <img className="wa"  src="/static/dev_logo.png" alt="" />
+                        <img className="wa"  src="/static/opens/atlant/fire-fighting-hatches.png" alt="" />
                     </div>
                 </Link>
-                <Link href="/">
+                <Link href="/opens/atlant/security-others/">
                     <div className="card aic s3 mob-right flex column h100">
                         <h3 className="tac">Другие защитные устройства</h3>
-                        <img className="wa"  src="/static/dev_logo.png" alt="" />
+                        <img className="wa"  src="/static/opens/atlant/security-others.png" alt="" />
                     </div>
                 </Link>
                 <Link href="/">
