@@ -21,7 +21,7 @@ export default function SecurityDoors() {
                                 <li className="min-text">Без индекса - без дополнительных устройств</li>
                             </ul>
                         </div>
-                        <img className="ha ofcontain" style={{ width: '262px' }} src="/static/opens/atlant/fire-fighting-gates.jpg" alt="" />
+                        <img className="ha ofcontain" style={{ maxWidth: '262px' }} src="/static/opens/atlant/fire-fighting-gates.jpg" alt="" />
                     </div>
                 </Link>
                 <Link href="/opens/atlant/fire-fighting-gates/fire-fighting-gate-2/">
@@ -35,7 +35,7 @@ export default function SecurityDoors() {
                             <li className="min-text">5 - с электроприводом</li>
                             <li className="min-text">Без индекса - без дополнительных устройств</li>
                         </ul>
-                        <img className="ha ofcontain" style={{ width: '262px' }} src="/static/opens/atlant/fire-fighting-gates/fire-fighting-gate-2.jpg" alt="" />
+                        <img className="ha ofcontain" style={{ maxWidth: '262px' }} src="/static/opens/atlant/fire-fighting-gates/fire-fighting-gate-2.jpg" alt="" />
                     </div>
                 </Link>
             </div>

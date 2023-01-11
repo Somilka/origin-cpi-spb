@@ -32,7 +32,7 @@ export default function OpensCategories(props) {
             },
             {
                 id: 5,
-                title: 'Специализированные двери "Атлант"',
+                title: 'Специализированные двери «Атлант»',
                 link: "/opens/atlant",
             },
         ];

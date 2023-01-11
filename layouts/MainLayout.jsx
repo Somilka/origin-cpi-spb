@@ -186,6 +186,9 @@ export default function MainLayout({ children, title, page }) {
 									<Link href="/opens/fire-fighting">
 										<a className='nav-item'>Противопожарные двери и окна</a>
 									</Link>
+									<Link href="/opens/fire-fighting">
+										<a className='nav-item'>Специализированные двери &#171;Атлант&#187;</a>
+									</Link>
 								</div>
 							</div>
 						</div>

@@ -23,7 +23,7 @@ export default function SecurityDoor2() {
                     </div>
                 </div>
                 <div className="hl flex column jcc h100">
-                    <img className="" src="/static/opens/atlant/security-doors/security-door2/security-door2-1.jpg" alt="" />
+                    <img className="ha" style={{ maxWidth: '400px' }} src="/static/opens/atlant/security-doors/security-door2/security-door2-1.jpg" alt="" />
                 </div>
                 <div className="hr flex column bigger-gap">
                     <p>

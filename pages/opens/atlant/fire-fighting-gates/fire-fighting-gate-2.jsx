@@ -23,8 +23,8 @@ export default function FireFightingGate1() {
                     </div>
                 </div>
 
-                <div className="flex hl aic h100">
-                    <img className="w100" src="/static/opens/atlant/fire-fighting-gates/fire-fighting-gate-2.jpg" alt="" />
+                <div className="flex hl aic jcc h100">
+                    <img className="ha" style={{ maxWidth: '400px' }} src="/static/opens/atlant/fire-fighting-gates/fire-fighting-gate-2.jpg" alt="" />
                 </div>
                 <div className="hr flex column bigger-gap">
                     <p>
