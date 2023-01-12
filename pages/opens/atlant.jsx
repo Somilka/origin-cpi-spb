@@ -70,13 +70,12 @@ export default function Atlant() {
                         <img className="wa"  src="/static/dev_logo.png" alt="" />
                     </div>
                 {/* </Link> */}
-                {/* <Link href="/opens/atlant/anti-terror/"> */}
+                <Link href="/opens/atlant/anti-terror/">
                     <div className="card aic s3 mob-left flex column h100">
                         <h3 className="tac">Средства антитеррора</h3>
-                        {/* <img className="wa"  src="/static/opens/atlant/anti-terror.png" alt="" /> */}
-                        <img className="wa"  src="/static/dev_logo.png" alt="" />
+                        <img className="wa"  src="/static/opens/atlant/anti-terror.png" alt="" />
                     </div>
-                {/* </Link> */}
+                </Link>
                 <Link href="/opens/atlant/security-gates/">
                     <div className="card aic t3 mob-right flex column h100">
                         <h3 className="tac">Ворота защитные</h3>

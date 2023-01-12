@@ -1,7 +1,7 @@
 import MainLayout from "../../../../layouts/MainLayout";
 import Slider from "/components/Slider/Slider";
 
-export default function FireFightingDoor1() {
+export default function AntiTerror1() {
     return (
         <MainLayout>
             <div className="content">
