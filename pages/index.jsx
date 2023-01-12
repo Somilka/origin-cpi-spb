@@ -52,7 +52,7 @@ export default function Index() {
 			</Slider>
 
 			<div className='content'>
-				<Link href='/sills'>
+				<Link href='/sills/brusbox/'>
 					<div className='category big'>
 						<img src='/static/categories/sills.png' alt='Подоконники' className='category-img' />
 						<div className='category-name'>Подоконники</div>

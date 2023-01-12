@@ -1,12 +1,23 @@
 import MainLayout from "../../layouts/MainLayout";
 import Link from "next/link";
 
+import { useState } from "react";
+
 import CallMasterBtn from "../../components/Btns/CallMasterBtn/CallMasterBtn";
 import CallRaschBtn from "../../components/Btns/CallRaschBtn/CallRaschBtn";
 
+import SillsCategories from "/components/SillsCategories";
+
 export default function Stone() {
+    const [winNav, setWinNav] = useState(1);
+
     return (
         <MainLayout>
+            <div className="content">
+                <div className="win-nav">
+                    <SillsCategories winNav={winNav} />
+                </div>
+            </div>
             <div className="content"><div className="title">Каменные подоконники</div></div>
             <div className="content">
                 <div className="block full">

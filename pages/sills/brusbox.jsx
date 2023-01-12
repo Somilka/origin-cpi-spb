@@ -1,11 +1,22 @@
 import MainLayout from "../../layouts/MainLayout";
 
+import { useState } from "react";
+
 import CallMasterBtn from "../../components/Btns/CallMasterBtn/CallMasterBtn";
 import CallRaschBtn from "../../components/Btns/CallRaschBtn/CallRaschBtn";
 
+import SillsCategories from "/components/SillsCategories";
+
 export default function Brusbox() {
+    const [winNav, setWinNav] = useState(0);
+
  return (
     <MainLayout>
+        <div className="content">
+            <div className="win-nav">
+                <SillsCategories winNav={winNav} />
+            </div>
+        </div>
         <div className="content">
             <div className="title">Подоконники Brusbox</div>
         </div>

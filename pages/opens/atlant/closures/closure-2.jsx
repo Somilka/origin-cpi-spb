@@ -1,12 +1,12 @@
 import MainLayout from "../../../../layouts/MainLayout";
 import Slider from "/components/Slider/Slider";
 
-export default function FireFightingGate2() {
+export default function Closure2() {
     return (
         <MainLayout>
             <div className="content">
                 <div className="title">
-                    АТ.ВР. Г(19).С(30) однопольные
+                    АТ.З2.ВЗ.(0,5).Г(7).С(60)
                 </div>
             </div>
             <div className="content">
@@ -22,21 +22,23 @@ export default function FireFightingGate2() {
                         <p>Без индекса - без дополнительных устройств</p>
                     </div>
                 </div>
-
                 <div className="flex hl aic jcc h100">
-                    <img className="ha" style={{ maxWidth: '400px' }} src="/static/opens/atlant/hermetic-gates/hermetic-gates2/hermetic-gate.jpg" alt="" />
+                    <img className="ha" style={{ maxWidth: '350px' }} src="/static/opens/atlant/closures/closure-2/closure.jpg" alt="" />
                 </div>
                 <div className="hr flex column bigger-gap">
                     <p>
-                        Ворота защитные С, где:<br />
-                        19 – герметичность, л/ч;<br />
-                        30 – сейсмоударостойкость, g;<br />
-                        предназначенные для герметизации транспортных проемов в специальные фортификационные и подземные сооружения.
+                        Затвор защитный герметический двустворчатый:<br />
+                        АТ.З2.ВЗ.(0,5).Г(7).С(60) по ТУ 25.11.23-074-52435457-2019;<br />
+                        АТ.З2.ВЗ.(3).Г(7).С(60) по ТУ 25.11.23-073-52435457-2019;<br />
+                        АТ.З2.ВЗ(3,5).Г(7).С(60) по ТУ 25.11.23-071-52435457-2019, где:<br />
+                        0,5; 3; 3,5 – эквивалентная статическая нагрузка, МПа;<br />
+                        7 – герметичность, л/ч;<br />
+                        60 – сейсмоударостойкость, g,<br />
+                        предназначен для защиты и герметизации транспортных проемов в специальных фортификационных сооружениях от поражающих факторов ЯВ.
                     </p>
                     <div>
                         <p>
-                            Ворота могут быть изготовлены как двустворчатые, так и одностворчатые.<br />
-                            Ворота выпускаются в шести исполнениях:
+                            Затвор выпускаются в шести исполнениях:
                         </p>
                         <ul className="list-tire">
                             <li>без дополнительных устройств - без индекса</li>
@@ -53,26 +55,27 @@ export default function FireFightingGate2() {
                         </p>
                         <ul className="list-tire">
                             <li>принцип открывания распашной;</li>
-                            <li>способ открывания вручную, снаружи и изнутри;</li>
+                            <li>способ открывания автоматический при помощи привода;</li>
                             <li>направление открывания – левое, правое;</li>
                             <li>установка в вертикальном положении.</li>
                         </ul>
                     </div>
                     <div>
                         <p>
-                            Ворота состоят из следующих основных элементов:
+                            Щит состоит из следующих основных элементов:
                         </p>
                         <ul className="list-tire">
-                            <li>полотен;</li>
-                            <li>рамы.</li>
+                            <li>полотна;</li>
+                            <li>рамы;</li>
+                            <li>комингса;</li>
+                            <li>механизма задраивания.</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <Slider>
-                <img src="/static/opens/atlant/hermetic-gates/hermetic-gates2/slides/slide1.jpg" alt="" className="slide" />
-                <img src="/static/opens/atlant/hermetic-gates/hermetic-gates2/slides/slide2.jpg" alt="" className="slide" />
-                <img src="/static/opens/atlant/hermetic-gates/hermetic-gates2/slides/slide3.jpg" alt="" className="slide" />
+                <img src="/static/opens/atlant/closures/closure-2/slides/slide1.jpg" alt="" className="slide" />
+                <img src="/static/opens/atlant/closures/closure-2/slides/slide2.jpg" alt="" className="slide" />
             </Slider>
         </MainLayout >
     );

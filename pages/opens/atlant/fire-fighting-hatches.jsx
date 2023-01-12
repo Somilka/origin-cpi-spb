@@ -21,7 +21,7 @@ export default function FireFightingHatches() {
                                 <li className="min-text">Без индекса - без дополнительных устройств</li>
                             </ul>
                         </div>
-                        <img className="ha ofcontain" style={{ maxHeight: '242px' }} src="/static/opens/atlant/fire-fighting-hatches/fire-fighting-hatches-1.jpg" alt="" />
+                        <img className="wa ofcontain" style={{ maxHeight: '242px' }} src="/static/opens/atlant/fire-fighting-hatches/fire-fighting-hatches-1.jpg" alt="" />
                     </div>
                 </Link>
                 <Link href="/opens/atlant/fire-fighting-hatches/fire-fighting-hatch-2/">
@@ -37,7 +37,7 @@ export default function FireFightingHatches() {
                                 <li className="min-text">Без индекса - без дополнительных устройств</li>
                             </ul>
                         </div>
-                        <img className="ha ofcontain" style={{ maxHeight: '242px' }} src="/static/opens/atlant/fire-fighting-hatches/fire-fighting-hatches-2.jpg" alt="" />
+                        <img className="wa ofcontain" style={{ maxHeight: '242px' }} src="/static/opens/atlant/fire-fighting-hatches/fire-fighting-hatches-2.jpg" alt="" />
                     </div>
                 </Link>
                 <Link href="/opens/atlant/fire-fighting-hatches/fire-fighting-hatch-3/">
@@ -53,7 +53,7 @@ export default function FireFightingHatches() {
                                 <li className="min-text">Без индекса - без дополнительных устройств</li>
                             </ul>
                         </div>
-                        <img className="ha ofcontain" style={{ maxHeight: '242px' }} src="/static/opens/atlant/fire-fighting-hatches/fire-fighting-hatches-3.jpg" alt="" />
+                        <img className="wa ofcontain" style={{ maxHeight: '242px' }} src="/static/opens/atlant/fire-fighting-hatches/fire-fighting-hatches-3.jpg" alt="" />
                     </div>
                 </Link>
             </div>
